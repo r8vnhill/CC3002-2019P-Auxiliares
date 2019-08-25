@@ -1,8 +1,11 @@
 package print.document;
 
 /**
+ * Abstract class containing the common behaviour of document objects.
+ *
  * @author Ignacio Slater Muñoz
- * @since
+ * @version 1.0b1
+ * @since 1.0b1
  */
 public abstract class AbstractDocument implements IDocument {
 
