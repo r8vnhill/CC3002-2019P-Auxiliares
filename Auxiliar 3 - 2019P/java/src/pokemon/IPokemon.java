@@ -30,12 +30,12 @@ public interface IPokemon {
   /**
    * @return List with all the Pokémon attacks.
    */
-  List<cc3002.pokemon.IAttack> getAttacks();
+  List<IAttack> getAttacks();
 
   /**
    * @return The current selected attack.
    */
-  cc3002.pokemon.IAttack getSelectedAttack();
+  IAttack getSelectedAttack();
   //endregion
 
   /**

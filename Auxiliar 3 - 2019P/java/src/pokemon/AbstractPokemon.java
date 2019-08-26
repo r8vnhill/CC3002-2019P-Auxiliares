@@ -1,10 +1,10 @@
-package cc3002.pokemon;
+package pokemon;
 
-import cc3002.pokemon.fire.FireAttack;
-import cc3002.pokemon.grass.GrassAttack;
-import cc3002.pokemon.normal.NormalAttack;
-import cc3002.pokemon.water.WaterAttack;
 import java.util.List;
+import pokemon.fire.FireAttack;
+import pokemon.grass.GrassAttack;
+import pokemon.normal.NormalAttack;
+import pokemon.water.WaterAttack;
 
 /**
  * Abstract class that represents a generic Pokémon. This class contains the necessary methods to
@@ -12,6 +12,8 @@ import java.util.List;
  * and hp.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b3
+ * @since 1.1b1
  */
 public abstract class AbstractPokemon implements IPokemon {
 
