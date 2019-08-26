@@ -1,22 +1,24 @@
 package pokemon.grass;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import cc3002.pokemon.IAttack;
-import cc3002.pokemon.IPokemon;
-import cc3002.pokemon.fire.FireAttack;
-import cc3002.pokemon.fire.FirePokemon;
-import cc3002.pokemon.normal.NormalPokemon;
-import cc3002.pokemon.water.WaterPokemon;
 import java.util.ArrayList;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import pokemon.IAttack;
+import pokemon.IPokemon;
+import pokemon.fire.FireAttack;
+import pokemon.fire.FirePokemon;
+import pokemon.normal.NormalPokemon;
+import pokemon.water.WaterPokemon;
 
 /**
  * Tests set for the GrassAttack class.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b13
+ * @since 1.1b11
  */
 public class GrassAttackTest {
 
@@ -27,7 +29,7 @@ public class GrassAttackTest {
       totodile,
       audino;
 
-  @Before
+  @BeforeEach
   public void setUp() {
     grassAttack = new GrassAttack("Vine Whip", 45);
     charmander = new FirePokemon("Charmander", 100, new ArrayList<>());
