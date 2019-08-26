@@ -1,12 +1,14 @@
 package pokemon.fire;
 
-import cc3002.pokemon.AbstractAttack;
-import cc3002.pokemon.IPokemon;
+import pokemon.AbstractAttack;
+import pokemon.IPokemon;
 
 /**
  * This class defines the logic of a fire type attack.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b10
+ * @since 1.1b1
  */
 public class FireAttack extends AbstractAttack {
 

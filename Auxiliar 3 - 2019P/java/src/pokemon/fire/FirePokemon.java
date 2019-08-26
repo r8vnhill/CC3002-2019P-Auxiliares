@@ -1,15 +1,17 @@
 package pokemon.fire;
 
-import cc3002.pokemon.AbstractPokemon;
-import cc3002.pokemon.IAttack;
-import cc3002.pokemon.grass.GrassAttack;
-import cc3002.pokemon.water.WaterAttack;
 import java.util.List;
+import pokemon.AbstractPokemon;
+import pokemon.IAttack;
+import pokemon.grass.GrassAttack;
+import pokemon.water.WaterAttack;
 
 /**
  * Class that represents a fire type Pokémon.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b10
+ * @since 1.1b1
  */
 public class FirePokemon extends AbstractPokemon {
 
