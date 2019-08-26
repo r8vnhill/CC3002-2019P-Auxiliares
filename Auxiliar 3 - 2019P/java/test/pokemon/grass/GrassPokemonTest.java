@@ -15,7 +15,7 @@ import pokemon.water.WaterAttack;
 
 /**
  * @author Ignacio Slater Muñoz
- * @version 1.1b13
+ * @version 1.1rc1
  * @since 1.1b11
  */
 public class GrassPokemonTest {
@@ -83,7 +83,7 @@ public class GrassPokemonTest {
   public void receiveFireAttack() {
     assertEquals(100, treecko.getHP());
     treecko.receiveFireAttack(fireAttack);
-    assertEquals(20, treecko.getHP());
+    assertEquals(40, treecko.getHP());
   }
 
   @Test

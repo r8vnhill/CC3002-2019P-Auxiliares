@@ -15,7 +15,7 @@ import pokemon.normal.NormalAttack;
 
 /**
  * @author Ignacio Slater Muñoz
- * @version 1.1b15
+ * @version 1.1rc1
  * @since 1.1b11
  */
 public class WaterPokemonTest {
@@ -62,7 +62,7 @@ public class WaterPokemonTest {
   public void attackTest() {
     totodile.selectAttack(0);
     totodile.attack(charmander);
-    assertEquals(20, charmander.getHP());
+    assertEquals(40, charmander.getHP());
   }
 
   @Test
@@ -76,7 +76,7 @@ public class WaterPokemonTest {
   public void receiveGrassAttack() {
     assertEquals(100, totodile.getHP());
     totodile.receiveGrassAttack(grassAttack);
-    assertEquals(10, totodile.getHP());
+    assertEquals(32, totodile.getHP());
   }
 
   @Test

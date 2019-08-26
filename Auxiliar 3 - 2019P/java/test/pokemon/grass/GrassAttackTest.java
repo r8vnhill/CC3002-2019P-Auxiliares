@@ -17,7 +17,7 @@ import pokemon.water.WaterPokemon;
  * Tests set for the GrassAttack class.
  *
  * @author Ignacio Slater Muñoz
- * @version 1.1b13
+ * @version 1.1rc1
  * @since 1.1b11
  */
 public class GrassAttackTest {
@@ -53,7 +53,7 @@ public class GrassAttackTest {
 
     assertEquals(75, charmander.getHP());
     assertEquals(75, treecko.getHP());
-    assertEquals(10, totodile.getHP());
+    assertEquals(32, totodile.getHP());
     assertEquals(55, audino.getHP());
   }
 

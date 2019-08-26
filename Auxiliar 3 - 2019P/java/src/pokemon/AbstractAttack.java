@@ -5,7 +5,7 @@ package pokemon;
  * it's name and base damage.
  *
  * @author Ignacio Slater Muñoz
- * @version 1.1b4
+ * @version 1.1rc1
  * @since 1.1b1
  */
 public abstract class AbstractAttack implements IAttack {

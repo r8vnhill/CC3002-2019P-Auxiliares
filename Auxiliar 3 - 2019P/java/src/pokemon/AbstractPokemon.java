@@ -12,7 +12,7 @@ import pokemon.water.WaterAttack;
  * and hp.
  *
  * @author Ignacio Slater Muñoz
- * @version 1.1b3
+ * @version 1.1rc1
  * @since 1.1b1
  */
 public abstract class AbstractPokemon implements IPokemon {
@@ -85,7 +85,7 @@ public abstract class AbstractPokemon implements IPokemon {
    *     Received attack.
    */
   protected void receiveWeaknessAttack(IAttack attack) {
-    this.hp -= attack.getBaseDamage() * 2;
+    this.hp -= attack.getBaseDamage() * 1.5;
   }
 
   /**

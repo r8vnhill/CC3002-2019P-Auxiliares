@@ -17,7 +17,7 @@ import pokemon.water.WaterPokemon;
  * Tests set for the FireAttack class.
  *
  * @author Ignacio Slater Muñoz
- * @version 1.1b12
+ * @version 1.1rc1
  * @since 1.1b12
  */
 public class FireAttackTest {
@@ -52,7 +52,7 @@ public class FireAttackTest {
     fireAttack.attack(audino);
 
     assertEquals(80, charmander.getHP());
-    assertEquals(20, treecko.getHP());
+    assertEquals(40, treecko.getHP());
     assertEquals(80, totodile.getHP());
     assertEquals(60, audino.getHP());
   }

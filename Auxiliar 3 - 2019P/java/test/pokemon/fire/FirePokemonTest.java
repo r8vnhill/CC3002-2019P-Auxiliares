@@ -15,7 +15,7 @@ import pokemon.water.WaterAttack;
 
 /**
  * @author Ignacio Slater Muñoz
- * @version 1.1b12
+ * @version 1.1rc1
  * @since 1.1b12
  */
 public class FirePokemonTest {
@@ -69,7 +69,7 @@ public class FirePokemonTest {
   public void receiveWaterAttack() {
     assertEquals(100, charmander.getHP());
     charmander.receiveWaterAttack(waterAttack);
-    assertEquals(20, charmander.getHP());
+    assertEquals(40, charmander.getHP());
   }
 
   @Test
