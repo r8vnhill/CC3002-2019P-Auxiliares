@@ -1,13 +1,15 @@
 package pokemon.normal;
 
-import cc3002.pokemon.AbstractPokemon;
-import cc3002.pokemon.IAttack;
 import java.util.List;
+import pokemon.AbstractPokemon;
+import pokemon.IAttack;
 
 /**
  * Class that represents a normal type Pokémon.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b7
+ * @since 1.1b1
  */
 public class NormalPokemon extends AbstractPokemon {
 
