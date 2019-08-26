@@ -1,18 +1,23 @@
 package pokemon.fire;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
-import cc3002.pokemon.IPokemon;
-import cc3002.pokemon.grass.GrassAttack;
-import cc3002.pokemon.normal.NormalAttack;
-import cc3002.pokemon.normal.NormalPokemon;
-import cc3002.pokemon.water.WaterAttack;
 import java.util.ArrayList;
 import java.util.Arrays;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import pokemon.IPokemon;
+import pokemon.grass.GrassAttack;
+import pokemon.normal.NormalAttack;
+import pokemon.normal.NormalPokemon;
+import pokemon.water.WaterAttack;
 
+/**
+ * @author Ignacio Slater Muñoz
+ * @version 1.1b12
+ * @since 1.1b12
+ */
 public class FirePokemonTest {
 
   private IPokemon
@@ -23,7 +28,7 @@ public class FirePokemonTest {
   private NormalAttack normalAttack;
   private WaterAttack waterAttack;
 
-  @Before
+  @BeforeEach
   public void setUp() {
     fireAttack = new FireAttack("Ember", 40);
     grassAttack = new GrassAttack("Vine Whip", 45);

@@ -1,21 +1,24 @@
 package pokemon.fire;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import cc3002.pokemon.IAttack;
-import cc3002.pokemon.IPokemon;
-import cc3002.pokemon.grass.GrassPokemon;
-import cc3002.pokemon.normal.NormalPokemon;
-import cc3002.pokemon.water.WaterAttack;
-import cc3002.pokemon.water.WaterPokemon;
 import java.util.ArrayList;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import pokemon.IAttack;
+import pokemon.IPokemon;
+import pokemon.grass.GrassPokemon;
+import pokemon.normal.NormalPokemon;
+import pokemon.water.WaterAttack;
+import pokemon.water.WaterPokemon;
 
 /**
  * Tests set for the FireAttack class.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b12
+ * @since 1.1b12
  */
 public class FireAttackTest {
 
@@ -26,7 +29,7 @@ public class FireAttackTest {
       totodile,
       audino;
 
-  @Before
+  @BeforeEach
   public void setUp() {
     fireAttack = new FireAttack("Ember", 40);
     charmander = new FirePokemon("Charmander", 100, new ArrayList<>());
