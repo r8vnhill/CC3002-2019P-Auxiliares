@@ -10,6 +10,8 @@ import pokemon.grass.GrassAttack;
  * Class that represents a water type Pokémon.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b5
+ * @since 1.1b1
  */
 public class WaterPokemon extends AbstractPokemon {
 
