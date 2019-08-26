@@ -3,7 +3,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,7 +25,7 @@ public class PokemonTest {
   @BeforeEach
   public void setUp() {
     totodile = new WaterPokemon("Totodile", 30, new ArrayList<>(
-        Collections.singletonList()));
+        Collections.singletonList(new WaterAttack("Bubble", 10))));
     chikorita = new GrassPokemon("Chikorita", 25, new ArrayList<>(
         Collections.singletonList(new GrassAttack("RazorLeaf", 8))));
   }

@@ -1,23 +1,26 @@
 package print.printer;
 
 import java.io.IOException;
-import print.document.IDocument;
 import print.document.PDFDocument;
 import print.document.PSDocument;
 
+/**
+ * This class represents the HP335 printer that's outside the <i>Salita</i>.
+ *
+ * @author Ignacio Slater Muñoz
+ * @version 1.1b1
+ * @since 1.1b1
+ */
 public class SalitaPrinter implements IPrinter {
 
-  public void printDuplex(IDocument document) throws IOException {
+  @Override
+  public void printDuplexPS(final PSDocument document) throws IOException {
     execute("duplex " + document.getName() + "|lpr –P hp-335");
   }
 
   @Override
-  public void printDuplexPS(final PSDocument document) throws IOException {
-    //  TODO
-  }
-
-  @Override
   public void printDuplexPDF(final PDFDocument document) throws IOException {
-    //  TODO
+    execute("pdf2ps " + document.getName() + " out.ps");
+    execute("duplex out.ps | lpr –P hp-335");
   }
 }
