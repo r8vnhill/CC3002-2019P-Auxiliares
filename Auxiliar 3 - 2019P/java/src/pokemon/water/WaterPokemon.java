@@ -1,10 +1,10 @@
 package pokemon.water;
 
-import cc3002.pokemon.AbstractPokemon;
-import cc3002.pokemon.IAttack;
-import cc3002.pokemon.fire.FireAttack;
-import cc3002.pokemon.grass.GrassAttack;
 import java.util.List;
+import pokemon.AbstractPokemon;
+import pokemon.IAttack;
+import pokemon.fire.FireAttack;
+import pokemon.grass.GrassAttack;
 
 /**
  * Class that represents a water type Pokémon.
