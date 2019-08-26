@@ -1,18 +1,23 @@
 package pokemon.normal;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import cc3002.pokemon.IAttack;
-import cc3002.pokemon.IPokemon;
-import cc3002.pokemon.fire.FireAttack;
-import cc3002.pokemon.fire.FirePokemon;
-import cc3002.pokemon.grass.GrassPokemon;
-import cc3002.pokemon.water.WaterPokemon;
 import java.util.ArrayList;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import pokemon.IAttack;
+import pokemon.IPokemon;
+import pokemon.fire.FireAttack;
+import pokemon.fire.FirePokemon;
+import pokemon.grass.GrassPokemon;
+import pokemon.water.WaterPokemon;
 
+/**
+ * @author Ignacio Slater Muñoz
+ * @version 1.1b14
+ * @since 1.1b11
+ */
 public class NormalAttackTest {
 
   private IAttack normalAttack;
@@ -22,7 +27,7 @@ public class NormalAttackTest {
       totodile,
       audino;
 
-  @Before
+  @BeforeEach
   public void setUp() {
     normalAttack = new NormalAttack("Pound", 40);
     charmander = new FirePokemon("Charmander", 100, new ArrayList<>());
