@@ -1,10 +1,12 @@
-package cc3002.pokemon;
+package pokemon;
 
 /**
  * Common interface for all the attacks. Every attack have a name and a base damage, and should be
  * able to damage a Pokémon.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b2
+ * @since 1.1b1
  */
 public interface IAttack {
 
