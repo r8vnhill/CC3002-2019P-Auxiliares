@@ -1,12 +1,14 @@
 package pokemon.grass;
 
-import cc3002.pokemon.AbstractAttack;
-import cc3002.pokemon.IPokemon;
+import pokemon.AbstractAttack;
+import pokemon.IPokemon;
 
 /**
  * This class defines the logic of a grass type attack.
  *
  * @author Ignacio Slater Muñoz
+ * @version 1.1b9
+ * @since 1.1b1
  */
 public class GrassAttack extends AbstractAttack {
 

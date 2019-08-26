@@ -1,11 +1,18 @@
 package pokemon.grass;
 
-import cc3002.pokemon.AbstractPokemon;
-import cc3002.pokemon.IAttack;
-import cc3002.pokemon.fire.FireAttack;
-import cc3002.pokemon.water.WaterAttack;
 import java.util.List;
+import pokemon.AbstractPokemon;
+import pokemon.IAttack;
+import pokemon.fire.FireAttack;
+import pokemon.water.WaterAttack;
 
+/**
+ * Class that represents a grass type Pokémon.
+ *
+ * @author Ignacio Slater Muñoz
+ * @version 1.1b9
+ * @since 1.1b1
+ */
 public class GrassPokemon extends AbstractPokemon {
 
   /**
